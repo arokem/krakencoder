@@ -19,8 +19,9 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/kjamison/krakencoder",
     packages=setuptools.find_packages(),
-    install_requires = required,
-    include_package_data = True,
+    install_requires=required,
+    include_package_data=True,
+    package_data={'krakencoder': ['model_data_urls.json']},
     classifiers= [
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
